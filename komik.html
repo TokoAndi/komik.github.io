@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Komik</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <h1>Data Komik</h1>
     <form id="komikForm">
       <label for="cariInput">Cari Nama Komik:</label>
-      <input type="text" id="cariInput" oninput="cariData()">
-      <button onclick="cariData()">Cari</button>
+      <input type="text" id="cariInput" oninput="cariData()" />
       <label for="namaKomik">Nama Komik:</label>
       <input type="text" id="namaKomik" required />
       <label for="chapter">Chapter:</label>
       <input type="number" id="chapter" required />
       <button type="button" onclick="tambahData()">Tambah Data</button>
+      <!-- <button onclick="tampilkanSemuaData()">Tampilkan Semua Data</button> -->
     </form>
     <div id="dataContainer"></div>
     <script src="script.js"></script>
